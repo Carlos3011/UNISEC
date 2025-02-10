@@ -17,46 +17,56 @@ export default {
             colors: {
                 // 🌌 Primarios - Azul institucional (inspirado en trajes espaciales y naves)
                 primary: {
-                  DEFAULT: '#002D62',     // Azul Orbital (NASA Blue)
-                  dark: '#001A3A',        // Azul Profundo Espacial
-                  medium: '#004080',      // Azul Ionizante
-                  light: '#0066CC',       // Azul Propulsión
-                  soft: '#E6F0FF'         // Azul Aurora (fondos claros)
+                  100: '#E6F0FF', // Azul Aurora (fondos claros)
+                  300: '#0066CC', // Azul Propulsión
+                  500: '#004080', // Azul Ionizante
+                  700: '#001A3A', // Azul Profundo Espacial
+                  DEFAULT: '#002D62'  // Azul Orbital (NASA Blue)
                 },
-                
+              
                 // 🚀 Secundarios - Naranjas de ingeniería (inspirados en cohetes)
                 secondary: {
-                  DEFAULT: '#FF5800',     // Naranja Cohete
-                  dark: '#CC4500',        // Naranja Combustión
-                  medium: '#FF8C00',      // Naranja Ignición
-                  light: '#FFB366',       // Naranja Atmósfera
-                  soft: '#FFF0E6'         // Naranja Amanecer (fondos claros)
+                  100: '#FFF0E6', // Naranja Amanecer (fondos claros)
+                  300: '#FFB366', // Naranja Atmósfera
+                  500: '#FF8C00', // Naranja Ignición
+                  700: '#CC4500', // Naranja Combustión
+                  DEFAULT: '#FF5800'  // Naranja Cohete
                 },
-                
+              
                 // 🌠 Colores técnicos y de alta visibilidad
                 accent: {
-                  DEFAULT: '#00B4D8',     // Cian Astronauta
-                  dark: '#0096C7',        // Azul Traje Espacial
-                  danger: '#FF443A',      // Rojo Alerta (Sistemas Críticos)
-                  success: '#2ECC71',     // Verde Oxígeno
-                  warning: '#FFD700'      // Oro Estelar (Advertencias)
+                  100: '#B3E9F2', // Cian Nebular (Suave)
+                  300: '#00B4D8', // Cian Astronauta
+                  500: '#0096C7', // Azul Traje Espacial
+                  700: '#FF443A', // Rojo Alerta (Sistemas Críticos)
+                  900: '#FFD700'  // Oro Estelar (Advertencias)
                 },
-                
+              
                 // 🛰️ Escala de Grises Tecnológicos
                 tech: {
-                  DEFAULT: '#4A4E5B',     // Gris Satélite
-                  dark: '#2B2D35',        // Gris Cápsula
-                  medium: '#6C7180',      // Gris Panel de Control
-                  light: '#D1D5DB',       // Gris Antena
-                  soft: '#F8F9FC'         // Gris Nube Lunar (fondos)
+                  100: '#F8F9FC', // Gris Nube Lunar (fondos)
+                  300: '#D1D5DB', // Gris Antena
+                  500: '#6C7180', // Gris Panel de Control
+                  700: '#2B2D35', // Gris Cápsula
+                  DEFAULT: '#4A4E5B'  // Gris Satélite
                 },
-                
+              
                 // 🌑 Fondos Espaciales Profundos
                 cosmic: {
-                  DEFAULT: '#0A0F1D',     // Negro Cosmos
-                  dark: '#060912',        // Negro Agujero de Gusano
-                  nebula: '#1A1F34',      // Nebulosa Galáctica
-                  gradient: 'linear-gradient(155deg, #0A0F1D 0%, #1A1F34 100%)'
+                  100: '#1A1F34', // Nebulosa Galáctica
+                  300: '#0A0F1D', // Negro Cosmos
+                  500: '#060912', // Negro Agujero de Gusano
+                  700: '#02050B', // Negro Interestelar
+                  DEFAULT: '#000000'  // Negro Absoluto
+                },
+              
+                // ✨ Nueva categoría: Colores espaciales inspirados en galaxias y nebulosas
+                galactic: {
+                  100: '#F4E1FF', // Rosa Nebular
+                  300: '#B05EFF', // Púrpura Cuásar
+                  500: '#6829C3', // Violeta Pulsar
+                  700: '#3D1A7E', // Azul Oscuro Estelar
+                  900: '#1C0F42'  // Indigo Interestelar
                 }
               },
             backgroundColor: theme => ({

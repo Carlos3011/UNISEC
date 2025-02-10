@@ -7,19 +7,22 @@
     
     @vite('resources/css/app.css')
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 
-<body class="bg-cosmic-dark text-base font-['Inter']">
+<body class="bg-cosmic text-base font-['Inter']">
 
     <!-- Barra de progreso superior -->
     <div class="h-1 bg-secondary/20 fixed top-0 left-0 right-0 z-50">
-        <div class="h-full bg-secondary transition-all duration-300 ease-out" id="progress-bar"></div>
+        <div class="h-full bg-secondary-900 transition-all duration-300 ease-out" id="progress-bar"></div>
     </div>
 
     <!-- Capa de partículas -->
-    <div class="absolute inset-0 z-0 pointer-events-none">
-        <canvas id="starsCanvas" class="absolute inset-0"></canvas>
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <canvas id="starsCanvas" class="absolute inset-0 w-full h-full"></canvas>
     </div>
+
 
     <!-- NAVBAR MEJORADO -->
     <nav class="sticky top-0 bg-gradient-primary shadow-lg z-40 backdrop-blur-md bg-opacity-90 transition duration-300">
@@ -36,7 +39,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     @foreach(['inicio' => 'Inicio', 'acerca' => 'Acerca', 'ofertas' => 'Ofertas', 'miembros' => 'Miembros', 'contacto' => 'Contacto'] as $route => $label)
                         <a href="{{ route($route) }}" class="relative text-gray-200 hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300
-                           before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-secondary before:transition-all before:duration-300
+                           before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-secondary-500 before:transition-all before:duration-300
                            hover:before:w-full">
                             {{ $label }}
                         </a>
@@ -111,19 +114,7 @@
     </footer>
 
     @vite('resources/js/app.js')
-    
-    <!-- Script para el efecto de escritura dinámica -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script>
-        // Script para la barra de progreso
-        window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById('progress-bar').style.width = scrolled + "%";
-        });
-    </script>
+    @vite('resources/js/typed.js')
 
 </body>
 </html>

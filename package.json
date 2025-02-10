@@ -28,6 +28,7 @@
     "dependencies": {
         "@tailwindcss/forms": "^0.5.10",
         "aos": "^2.3.4",
-        "postcss-cli": "^11.0.0"
+        "postcss-cli": "^11.0.0",
+        "typed-js": "^0.2.3"
     }
 }

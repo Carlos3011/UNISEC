@@ -1,6 +1,19 @@
 import './bootstrap';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+
+
+
+// INICIO SCRIPTS GLOBALES
+
+// Script para la barra de progreso
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('progress-bar').style.width = scrolled + "%";
+});
 
 Aos.init({
     duration: 1000,  // Duración de la animación (en ms)
@@ -8,38 +21,9 @@ Aos.init({
     once: false,  // Ejecutar solo una vez o en cada scroll
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('.counter');
-    const speed = 200;
-    counters.forEach(counter => {
-            const updateCount = () => {
-                const target = parseInt(counter.dataset.count);
-                const count = parseInt(counter.innerText);
-                const increment = Math.ceil(target / speed);
+// FIN SCRIPTS GLOBALES
 
-                if (count < target) {
-                    counter.innerText = count + increment;
-                    setTimeout(updateCount, 10);
-                } else {
-                    counter.innerText = target.toLocaleString();
-                }
-            }
-
-            updateCount();
-        });
-});
-
- // Efecto parallax para elementos
-document.addEventListener('mousemove', (e) => {
-    const elements = document.querySelectorAll('.parallax-element');
-    const sensitivity = 30;
-    
-    elements.forEach(element => {
-        const x = (window.innerWidth - e.pageX * sensitivity) / 100;
-        const y = (window.innerHeight - e.pageY * sensitivity) / 100;
-        element.style.transform = `translate(${x}px, ${y}px)`;
-    });
-});
+//INICIO SCRIPTS HOVER
 
 //Efecto estrellas
 const canvas = document.getElementById('starsCanvas');
@@ -95,3 +79,25 @@ function animateStars() {
 }
 
 animateStars();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    counters.forEach(counter => {
+            const updateCount = () => {
+                const target = parseInt(counter.dataset.count);
+                const count = parseInt(counter.innerText);
+                const increment = Math.ceil(target / speed);
+
+                if (count < target) {
+                    counter.innerText = count + increment;
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            }
+
+            updateCount();
+        });
+});
+// FIN SCRIPTS HOVER
