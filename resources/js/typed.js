@@ -1,4 +1,4 @@
-import Type from "typed-js";
+import Typed from "typed.js";
  
 //HOVER
 

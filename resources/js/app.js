@@ -1,18 +1,27 @@
 import './bootstrap';
-
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-
-
 
 // INICIO SCRIPTS GLOBALES
 
 // Script para la barra de progreso
-window.addEventListener('scroll', () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById('progress-bar').style.width = scrolled + "%";
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBar = document.getElementById("progress-bar");
+
+    if (!progressBar) {
+        console.error("Elemento de la barra de progreso no encontrado.");
+        return;
+    }
+
+    function updateProgressBar() {
+        const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPosition = window.scrollY;
+        const progress = (scrollPosition / scrollTotal) * 100;
+        progressBar.style.width = progress + "%";
+    }
+
+    window.addEventListener("scroll", updateProgressBar);
+    updateProgressBar(); // Llamar para inicializar el progreso
 });
 
 Aos.init({
