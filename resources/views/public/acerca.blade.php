@@ -3,38 +3,64 @@
 @section('titulo', 'Acerca de UNISEC')
 
 @section('contenido')
-<!-- HERO SECTION -->
-<section class="relative min-h-[70vh] flex flex-col justify-center bg-gradient-to-br from-cosmic-300 via-space-700" data-aos="zoom-in-up" data-aos-duration="1200">
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-        <!-- Video de fondo con filtro y opacidad -->
-        <video autoplay muted loop class="w-full h-full object-cover filter blur-2xl opacity-30">
-            <source src="/videos/space-background.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/30 to-secondary/30"></div>
+<section class="relative min-h-[80vh] flex flex-col justify-center bg-gradient-to-br from-space-900 via-cosmic-800 to-space-900 overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1200">
+    <!-- Fondo estelar animado -->
+    <div class="absolute inset-0 -z-10">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+        <div class="stars-small animate-pulse-slow"></div>
+        <div class="stars-medium animate-pulse-medium"></div>
+        <div class="stars-large animate-pulse-fast"></div>
     </div>
-    <div class="relative max-w-7xl mx-auto px-6 text-center z-10">
-        <h1 class="text-5xl md:text-7xl font-bold bg-gradient-to-r from-secondary to-primary-100 bg-clip-text text-transparent mb-4 drop-shadow-2xl">
-            Acerca de UNISEC
-        </h1>
-        <p class="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
-            Innovación, compromiso y excelencia en la exploración espacial.
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-20 space-y-8">
+        <!-- Título con efecto galáctico -->
+        <div class="relative inline-block" data-aos="fade-up">
+            <h1 class="text-6xl md:text-8xl font-bold mb-4 galactic-title">
+                <span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-primary animate-gradient">UNISEC MEXICO</span>
+            </h1>
+            <div class="absolute inset-0 bg-[url('/svg/starburst.svg')] bg-contain bg-center opacity-30 mix-blend-overlay animate-rotate-slow"></div>
+        </div>
+        <style>
+            .galactic-title {
+                text-shadow: 0 0 40px rgba(76, 175, 255, 0.3),
+                            0 0 80px rgba(76, 175, 255, 0.2),
+                            0 0 120px rgba(76, 175, 255, 0.1);
+            }
+        </style>
+
+        <!-- Subtítulo con animación -->
+        <p class="text-xl md:text-2xl text-galactic-200 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-200 to-secondary-300">Innovación espacial</span> impulsada por la excelencia humana
         </p>
-        <!-- Botones de llamada a la acción sin escalado excesivo -->
-        <div class="flex justify-center gap-6">
-            <a href="#que-somos" class="px-8 py-3 bg-secondary text-white font-semibold rounded-full transition-all duration-300 hover:bg-secondary/90 hover:border-2 hover:border-cyan-400 hover:shadow-lg">
-                Conoce Nuestra Historia
+
+        <!-- Tarjetas interactivas -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+            <a href="#que-somos" class="group cosmic-card p-6 text-left transition-all duration-500 hover:transform hover:scale-[1.02]">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="cosmic-icon bg-primary/20 text-primary p-4 rounded-2xl">
+                        <i class="fas fa-scroll text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-galactic-100">Nuestra Travesía</h3>
+                </div>
+                <p class="text-white leading-relaxed">Desde 2012, escribiendo la historia de la exploración espacial con innovación y determinación.</p>
             </a>
-            <a href="#valores" class="px-8 py-3 border border-secondary text-secondary font-semibold rounded-full transition-all duration-300 hover:bg-secondary hover:text-white hover:shadow-lg">
-                Nuestros Valores
+
+            <a href="#valores" class="group cosmic-card p-6 text-left transition-all duration-500 hover:transform hover:scale-[1.02]">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="cosmic-icon bg-secondary/20 text-secondary p-4 rounded-2xl">
+                        <i class="fas fa-hand-holding-heart text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-galactic-100">Principios Cósmicos</h3>
+                </div>
+                <p class="text-white leading-relaxed">Ética, innovación sostenible y colaboración global como pilares fundamentales.</p>
             </a>
         </div>
     </div>
-    <!-- Ícono de Scroll Down -->
-    <div class="absolute bottom-8 w-full flex justify-center">
-        <a href="#que-somos" class="text-secondary animate-bounce">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+
+    <!-- Scroll indicator mejorado -->
+    <div class="absolute bottom-8 w-full flex justify-center" data-aos="fade-up" data-aos-delay="600">
+        <a href="#que-somos" class="scroll-indicator animate-float">
+            <i class="fas fa-chevron-down text-2xl text-secondary"></i>
         </a>
     </div>
 </section>
@@ -121,12 +147,71 @@
             </p>
             <footer class="flex items-center justify-center">
                 <div class="border-l-4 border-cyan-400 pl-4">
-                    <p class="font-bold text-xl">Dr. Alejandro Martínez</p>
-                    <p class="text-sm text-gray-400">Presidente y Fundador</p>
+                    <p class="font-bold text-xl">Dr. Hermes Moreno Alvarez</p>
+                    <p class="text-sm text-gray-400">Presidente UNISEC Seccion México</p>
                 </div>
             </footer>
         </blockquote>
     </div>
+</section>
+
+<!-- EQUIPO -->
+<section class="relative py-20 bg-gradient-to-b from-space-900 to-space-950/80">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16">
+      <div class="inline-flex relative mb-6">
+        <span class="absolute inset-0 bg-primary/10 blur-xl rounded-full"></span>
+        <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300 drop-shadow-md">
+          Nuestro Equipo
+        </h2>
+      </div>
+      <p class="text-lg text-gray-300/80 max-w-3xl mx-auto leading-relaxed tracking-wide">
+        Expertos multidisciplinarios unidos por la pasión por el espacio y la tecnología de vanguardia.
+      </p>
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:gap-12">
+      <!-- Tarjeta de Miembro -->
+      @for($i = 1; $i <= 6; $i++)
+      <div class="group relative bg-space-800/40 backdrop-blur-lg rounded-2xl border border-space-500/20 hover:border-primary/40 transition-all duration-300 ease-in-out hover:scale-[1.05] hover:rotate-1 shadow-xl shadow-space-900/50 overflow-hidden"
+           data-aos="fade-up" data-aos-delay="{{ $i * 50 }}">
+        
+        <div class="relative overflow-hidden">
+          <img src="/images/member{{$i}}.jpg" alt="Miembro" 
+               class="w-full h-80 object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-space-900/90 via-space-900/40 group-hover:via-space-900/20"></div>
+        </div>
+        
+        <div class="p-6 relative">
+          <div class="mb-4">
+            <h3 class="text-2xl font-bold text-white mb-1 tracking-wide">Dr. Nombre Apellido</h3>
+            <p class="text-primary/90 font-medium text-sm">Cargo Principal</p>
+          </div>
+          <p class="text-gray-300/80 text-sm leading-relaxed mb-5">
+            Especialista con 15 años de experiencia en sistemas avanzados de propulsión espacial y arquitectura de misiones interplanetarias.
+          </p>
+          
+          <div class="flex space-x-3">
+            <a href="#" class="p-2 rounded-lg bg-space-700/40 hover:bg-primary/30 transition-all">
+              <i class="fab fa-linkedin text-gray-300 hover:text-primary text-lg"></i>
+            </a>
+            <a href="#" class="p-2 rounded-lg bg-space-700/40 hover:bg-primary/30 transition-all">
+              <i class="fab fa-github text-gray-300 hover:text-primary text-lg"></i>
+            </a>
+            <a href="#" class="p-2 rounded-lg bg-space-700/40 hover:bg-primary/30 transition-all">
+              <i class="fas fa-envelope text-gray-300 hover:text-primary text-lg"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Efecto de borde dinámico -->
+        <div class="absolute inset-0 rounded-2xl pointer-events-none">
+          <div class="absolute inset-0 border-2 border-space-500/20 group-hover:border-primary/40 rounded-2xl transition-all duration-300"></div>
+        </div>
+      </div>
+      @endfor
+    </div>
+  </div>
 </section>
 
 <!-- NUESTRA HISTORIA (TIMELINE) -->

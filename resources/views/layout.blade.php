@@ -23,7 +23,7 @@
   </div>
 
   <!-- NAVBAR MEJORADO -->
-  <nav class="sticky top-0 bg-gradient-primary shadow-lg z-40 backdrop-blur-md bg-opacity-90 transition duration-300">
+  <nav class="sticky top-0 w-full bg-gradient-primary shadow-lg z-50 backdrop-blur-md bg-opacity-90 transition duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <!-- Logo con animación -->
@@ -35,10 +35,10 @@
 
         <!-- Menú de navegación -->
         <div class="hidden lg:flex items-center space-x-8">
-          @foreach(['inicio' => 'Inicio', 'acerca' => 'Acerca de', 'ofertas' => 'Ofertas', 'blog' => 'Blog', 'miembros' => 'Miembros', 'contacto' => 'Contacto'] as $route => $label)
+          @foreach(['inicio' => 'Inicio', 'acerca' => 'Acerca de', 'ofertas' => 'Ofertas', 'blog' => 'Blog', 'contacto' => 'Contacto'] as $route => $label)
             <a href="{{ route($route) }}" class="relative text-gray-200 hover:text-white px-3 py-2 text-sm font-medium transition-all duration-300
-               before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-secondary-500 before:transition-all before:duration-300
-               hover:before:w-full">
+              before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-secondary-500 before:transition-all before:duration-300
+              hover:before:w-full">
               {{ $label }}
             </a>
           @endforeach

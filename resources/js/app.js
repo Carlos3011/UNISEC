@@ -1,9 +1,11 @@
 import './bootstrap';
+
+import gsap from 'gsap';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
 // INICIO SCRIPTS GLOBALES
-
 // Script para la barra de progreso
 document.addEventListener("DOMContentLoaded", function () {
     const progressBar = document.getElementById("progress-bar");

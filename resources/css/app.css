@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    overflow-x: hidden; /* Evita el scroll horizontal */
-    width: 100vw; /* Asegura que no haya desplazamiento extra */
-}
 
 /* 🎨 ESTILOS PERSONALIZADOS */
 .global-map-overlay {

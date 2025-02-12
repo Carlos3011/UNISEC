@@ -6,7 +6,6 @@
 
 <!-- Seccion Hero -->
 <section class="relative min-h-screen flex items-center bg-gradient-to-br from-cosmic-300 via-space-700 ">
-
     <div class="relative max-w-7xl mx-auto px-6 text-center z-10" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="mb-12">
             <h1 class="text-6xl md:text-7xl bg-gradient-to-r from-secondary to-primary-100 bg-clip-text text-transparent font-bold mb-6 relative">
@@ -64,73 +63,122 @@
     </div>
 </div>
 
-<!-- Galeria de videos -->
-<section class="py-24 bg-gradient-to-br from-cosmic-300 via-space-700 " data-aos="fade-up">
-    <!-- Nebulosa decorativa -->
-    <div class="absolute top-1/3 left-1/4 w-96 h-96 bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-galactic-100 to-transparent blur-3xl opacity-30 animate-nebula-flow"></div>
-
+<!-- Galería de Videos Mejorada -->
+<section class="py-16 bg-gradient-to-br  relative overflow-hidden" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <!-- Encabezado -->
-        <div class="text-center mb-20 space-y-8">
+        <!-- Encabezado con animación -->
+        <div class="text-center mb-12">
             <div class="inline-flex relative">
-                <span class="absolute -inset-4 bg-galactic-300/30 blur-3xl rounded-full"></span>
-                <h2 id="typed-text-gallery-title"class="text-6xl md:text-7xl bg-gradient-to-r from-cyan-500 to-secondary-700 bg-clip-text text-transparent font-bold mb-6 relative">
-                    Exploración Multimedia
+                <span class="absolute -inset-4 bg-galactic-500/50 blur-3xl rounded-full"></span>
+                <h2 id="typed-text-gallery-title"class="text-6xl md:text-7xl bg-gradient-to-r from-cyan-500 to-secondary bg-clip-text text-transparent font-bold mb-6 relative">
+                    Galeria de Videos
                 </h2>
             </div>
-            <p class="text-xl md:text-2xl text-tech-100 max-w-4xl mx-auto leading-relaxed font-light">
-                Sumérgete en nuestro universo audiovisual con documentales exclusivos y reportajes detrás de cámaras.
+            <p class="text-lg text-tech-300 max-w-2xl mx-auto">
+                Descubre nuestros contenidos destacados y sumérgete en el universo.
             </p>
         </div>
 
-       <!-- Grid de Videos Mejorado -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[minmax(350px,_1fr)]">
-        @foreach([
-            ['id' => 'hI9HQfCAw64', 'title' => 'Lanzamiento histórico', 'description' => 'Revive el emocionante lanzamiento histórico, un hito en la ciencia espacial.', 'size' => 'lg:col-span-4 lg:row-span-1'],
-            ['id' => '1C_zuHf6lP4', 'title' => 'Primeras imágenes del telescopio James Webb', 'description' => 'Observa las primeras imágenes capturadas por el telescopio más avanzado del mundo.', 'size' => 'lg:col-span-2 lg:row-span-1'],
-            ['id' => '5KygwcZ545U', 'title' => 'Entrenamiento de astronautas', 'description' => 'Acompaña a los astronautas en su riguroso entrenamiento para explorar el espacio.', 'size' => 'lg:col-span-1'],
-            ['id' => 'BN624m0QJIM', 'title' => 'Falcon Heavy lanzamiento', 'description' => 'La grabación revela la emoción detrás de las cámaras durante este lanzamiento histórico.', 'size' => 'lg:col-span-4 lg:row-span-1'],
-        ] as $key => $video)
-        <div 
-            class="group relative rounded-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:z-20 border-2 border-tech-500 hover:border-accent/50 {{ $video['size'] }}"
-            data-aos="zoom-in-up" 
-            data-aos-delay="{{ $key * 100 }}"
-        >
-            <!-- Efecto de Nebulosa al Hover -->
-            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div class="absolute inset-0 bg-[radial-gradient(at_top_right,_var(--tw-gradient-stops))] from-galactic-100/30 to-transparent"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cosmic-700/80"></div>
-            </div>
-
-            <!-- Contenedor de Video con mejor fondo -->
-            <div class="relative w-full h-full bg-tech-700 overflow-hidden">
-                <div class="aspect-video w-full h-full bg-tech-700/50 animate-pulse"></div> <!-- Placeholder -->
+        <!-- Video Principal -->
+        <div class="mb-8 relative group" id="main-video-container">
+            <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.02] aero-glow">
                 <iframe 
-                    class="absolute inset-0 w-full h-full object-cover opacity-95 group-hover:opacity-100 transition-opacity duration-300"
-                    src="https://www.youtube.com/embed/{{ $video['id'] }}?modestbranding=1&rel=0&autohide=1" 
-                    loading="lazy"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    id="main-video-player"
+                    class="w-full h-full absolute inset-0"
+                    src="https://www.youtube.com/embed/hI9HQfCAw64?modestbranding=1&rel=0" 
+                    frameborder="0"
                     allowfullscreen
-                    style="aspect-ratio: 16/9;"
+                    loading="lazy"
                 ></iframe>
             </div>
-
-            <!-- Información del Video Mejorada -->
-            <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2 bg-gradient-to-t from-cosmic-700 via-cosmic-700/90 to-transparent">
-                <h3 class="text-xl xl:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                    {{ $video['title'] }}
-                </h3>
-                <p class="text-sm xl:text-base text-tech-300 group-hover:text-tech-100 transition-colors duration-300 line-clamp-2">
-                    {{ $video['description'] }}
-                </p>
-            </div>
         </div>
-        @endforeach
+
+        <!-- Carrusel de Videos -->
+        <div class="flex overflow-x-auto pb-6 -mx-2 scrollbar-hide space-x-4" id="video-carousel">
+            @foreach([
+                ['id' => 'hI9HQfCAw64', 'title' => 'Lanzamiento histórico', 'active' => true],
+                ['id' => '1C_zuHf6lP4', 'title' => 'Primeras imágenes James Webb'],
+                ['id' => '5KygwcZ545U', 'title' => 'Entrenamiento de astronautas'],
+                ['id' => 'BN624m0QJIM', 'title' => 'Falcon Heavy lanzamiento'],
+            ] as $video)
+            <div 
+                class="flex-shrink-0 w-64 cursor-pointer video-carousel-item transition-all duration-300 border border-tech-500 rounded-xl overflow-hidden bg-tech-700 hover:scale-105"
+                data-video-id="{{ $video['id'] }}"
+            >
+                <div class="aspect-video bg-gray-800 relative">
+                    <img 
+                        src="https://img.youtube.com/vi/{{ $video['id'] }}/hqdefault.jpg" 
+                        alt="{{ $video['title'] }}"
+                        class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
+                    >
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="text-white bg-black/50 rounded-full p-3 hover:bg-black/70 transition-all">
+                            <i class="fas fa-play text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4 bg-cosmic-500">
+                    <h3 class="text-md font-semibold text-primary line-clamp-2">
+                        {{ $video['title'] }}
+                    </h3>
+                </div>
+            </div>
+            @endforeach
+        </div>
     </div>
 
-    </div>
+    <!-- Efecto Nebulosa -->
+    <div class="absolute inset-0 bg-gradient-to-br from-galactic-700 to-cosmic-500 opacity-20 pointer-events-none"></div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselItems = document.querySelectorAll('.video-carousel-item');
+    const mainVideo = document.getElementById('main-video-player');
+
+    let activeVideoId = "hI9HQfCAw64";
+
+    carouselItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const videoId = this.dataset.videoId;
+
+            if (videoId !== activeVideoId) {
+                mainVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0`;
+                activeVideoId = videoId;
+
+                carouselItems.forEach(i => i.classList.remove('border-accent-500', 'border-2'));
+                this.classList.add('border-accent-500', 'border-2');
+            }
+        });
+    });
+
+    const firstVideo = document.querySelector('.video-carousel-item[data-video-id="hI9HQfCAw64"]');
+    if (firstVideo) {
+        firstVideo.classList.add('border-accent-500', 'border-2');
+    }
+});
+</script>
+
+<style>
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .video-carousel-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+    }
+
+    #video-carousel {
+        scroll-behavior: smooth;
+    }
+</style>
+
 
 <!-- SEPARADOR ORGÁNICO -->
 <div class="h-48 bg-space-700 relative overflow-hidden">
@@ -150,7 +198,7 @@
                     Exploración Visual
                 </h2>
             </div>
-            <p class="text-space-300 text-lg max-w-2xl mx-auto">
+            <p class="text-white text-lg max-w-2xl mx-auto">
                 Instantáneas de nuestros logros espaciales y avances tecnológicos
             </p>
         </div>

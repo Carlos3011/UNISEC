@@ -18,10 +18,6 @@ class PublicController extends Controller
         return view('public.ofertas');
     }
 
-    public function miembros() {
-        return view('public.miembros');
-    }
-
     public function blog() {
         return view('public.blog');
     }
