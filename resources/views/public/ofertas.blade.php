@@ -22,91 +22,96 @@
 
 </section>
 
+<!-- SEPARADOR ORGÁNICO -->
+<div class="h-48 bg-space-700 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-60"></div>
+    <div class="absolute inset-0 animate-orbital-movement">
+        <div class="w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
+    </div>
+</div>
+
 <!-- PROGRAMAS ACADÉMICOS -->
 <section id="programas" class="py-24 bg-gradient-to-br from-cosmic-300 via-space-700" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-5xl font-bold text-white mb-4">Nuestros Programas Académicos</h2>
-            <p class="text-white text-xl max-w-3xl mx-auto">
-                Sumérgete en un universo de conocimiento con cursos, diplomados y programas especializados en tecnología y ciencias espaciales.
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-semibold text-white mb-4">Nuestros Programas Académicos</h2>
+            <p class="text-white text-lg max-w-3xl mx-auto">
+                Explora cursos y programas especializados en tecnología y ciencias espaciales.
             </p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Tarjeta 1 -->
-            <a href="#" class="group cosmic-card p-6 bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-3xl" data-aos="fade-up" data-aos-delay="100">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="cosmic-icon bg-primary/20 text-primary p-4 rounded-2xl">
-                        <i class="fas fa-star text-3xl"></i>
+            <a href="#" class="group p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="bg-primary/20 text-primary p-4 rounded-xl">
+                        <i class="fas fa-star text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Curso de Astronomía Avanzada</h3>
                 </div>
-                <p class="text-white">
-                    Explora los secretos del universo con clases interactivas y observaciones prácticas.
-                </p>
+                <h3 class="text-xl font-semibold text-white mb-2">Curso de Astronomía Avanzada</h3>
+                <p class="text-white text-sm">Explora los secretos del universo con clases interactivas y observaciones prácticas.</p>
             </a>
             <!-- Tarjeta 2 -->
-            <a href="#" class="group cosmic-card p-6 bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-3xl" data-aos="fade-up" data-aos-delay="200">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="cosmic-icon bg-secondary/20 text-secondary p-4 rounded-2xl">
-                        <i class="fas fa-robot text-3xl"></i>
+            <a href="#" class="group p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="bg-secondary/20 text-secondary p-4 rounded-xl">
+                        <i class="fas fa-robot text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Diplomado en Robótica Espacial</h3>
                 </div>
-                <p class="text-white">
-                    Domina la automatización y el control para desarrollar tecnologías espaciales de vanguardia.
-                </p>
+                <h3 class="text-xl font-semibold text-white mb-2">Diplomado en Robótica Espacial</h3>
+                <p class="text-white text-sm">Domina la automatización y el control para desarrollar tecnologías espaciales de vanguardia.</p>
             </a>
             <!-- Tarjeta 3 -->
-            <a href="#" class="group cosmic-card p-6 bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-3xl" data-aos="fade-up" data-aos-delay="300">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="cosmic-icon bg-accent/20 text-accent p-4 rounded-2xl">
-                        <i class="fas fa-cogs text-3xl"></i>
+            <a href="#" class="group p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="bg-accent/20 text-accent p-4 rounded-xl">
+                        <i class="fas fa-cogs text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Seminario de Ingeniería Aeroespacial</h3>
                 </div>
-                <p class="text-white">
-                    Conoce las estrategias y tecnologías que impulsan el desarrollo en la industria aeroespacial.
-                </p>
+                <h3 class="text-xl font-semibold text-white mb-2">Seminario de Ingeniería Aeroespacial</h3>
+                <p class="text-white text-sm">Conoce las estrategias y tecnologías que impulsan el desarrollo en la industria aeroespacial.</p>
             </a>
             <!-- Tarjeta 4 -->
-            <a href="#" class="group cosmic-card p-6 bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-3xl" data-aos="fade-up" data-aos-delay="400">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="cosmic-icon bg-primary/20 text-primary p-4 rounded-2xl">
-                        <i class="fas fa-graduation-cap text-3xl"></i>
+            <a href="#" class="group p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="bg-primary/20 text-primary p-4 rounded-xl">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Maestría en Ciencias Espaciales</h3>
                 </div>
-                <p class="text-white">
-                    Avanza en tu carrera con un programa de posgrado enfocado en investigación y desarrollo espacial.
-                </p>
+                <h3 class="text-xl font-semibold text-white mb-2">Maestría en Ciencias Espaciales</h3>
+                <p class="text-white text-sm">Avanza en tu carrera con un programa de posgrado enfocado en investigación y desarrollo espacial.</p>
             </a>
             <!-- Tarjeta 5 -->
-            <a href="#" class="group cosmic-card p-6 bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-3xl" data-aos="fade-up" data-aos-delay="500">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="cosmic-icon bg-secondary/20 text-secondary p-4 rounded-2xl">
-                        <i class="fas fa-lightbulb text-3xl"></i>
+            <a href="#" class="group p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="bg-secondary/20 text-secondary p-4 rounded-xl">
+                        <i class="fas fa-lightbulb text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Taller de Innovación Tecnológica</h3>
                 </div>
-                <p class="text-white">
-                    Desarrolla proyectos disruptivos y soluciones innovadoras en el ámbito espacial.
-                </p>
+                <h3 class="text-xl font-semibold text-white mb-2">Taller de Innovación Tecnológica</h3>
+                <p class="text-white text-sm">Desarrolla proyectos disruptivos y soluciones innovadoras en el ámbito espacial.</p>
             </a>
             <!-- Tarjeta 6 -->
-            <a href="#" class="group cosmic-card p-6 bg-gray-800 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-3xl" data-aos="fade-up" data-aos-delay="600">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="cosmic-icon bg-accent/20 text-accent p-4 rounded-2xl">
-                        <i class="fas fa-satellite text-3xl"></i>
+            <a href="#" class="group p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="bg-accent/20 text-accent p-4 rounded-xl">
+                        <i class="fas fa-satellite text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Curso de Satélites y Comunicaciones</h3>
                 </div>
-                <p class="text-white">
-                    Aprende los fundamentos de las comunicaciones satelitales y su impacto en la conectividad global.
-                </p>
+                <h3 class="text-xl font-semibold text-white mb-2">Curso de Satélites y Comunicaciones</h3>
+                <p class="text-white text-sm">Aprende los fundamentos de las comunicaciones satelitales y su impacto en la conectividad global.</p>
             </a>
         </div>
     </div>
 </section>
+
+<!-- SEPARADOR ORGÁNICO -->
+<div class="h-48 bg-space-700 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-60"></div>
+    <div class="absolute inset-0 animate-orbital-movement">
+        <div class="w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
+    </div>
+</div>
+
 
 <!-- ¿POR QUÉ ELEGIR NUESTROS PROGRAMAS? -->
 <section class="py-24 bg-space-700" data-aos="fade-up">
@@ -114,37 +119,64 @@
         <div class="text-center mb-16">
             <h2 class="text-5xl font-bold text-white mb-4">¿Por qué elegir nuestros programas?</h2>
             <p class="text-white text-xl max-w-3xl mx-auto">
-                Ofrecemos una formación de excelencia con docentes expertos, tecnología de punta y un enfoque práctico que te preparará para el éxito.
+                Ofrecemos una formación integral con docentes expertos, proyectos innovadores y una red internacional de contactos que te impulsará a alcanzar tus metas.
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Beneficio 1 -->
-            <div class="p-6 bg-gray-800 rounded-2xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-chalkboard-teacher text-5xl text-primary mb-4"></i>
+            <div class="flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-lg text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                <div class="bg-primary/20 text-primary p-6 rounded-full mb-6">
+                    <i class="fas fa-chalkboard-teacher text-4xl"></i>
+                </div>
                 <h3 class="text-2xl font-bold text-white mb-2">Docentes Expertos</h3>
-                <p class="text-white">
-                    Aprende de profesionales destacados en la industria espacial.
+                <p class="text-white text-sm">
+                    Aprende de profesionales destacados con experiencia en la industria espacial y científica, para asegurar una formación de calidad.
                 </p>
             </div>
             <!-- Beneficio 2 -->
-            <div class="p-6 bg-gray-800 rounded-2xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-flask text-5xl text-secondary mb-4"></i>
+            <div class="flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-lg text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                <div class="bg-secondary/20 text-secondary p-6 rounded-full mb-6">
+                    <i class="fas fa-flask text-4xl"></i>
+                </div>
                 <h3 class="text-2xl font-bold text-white mb-2">Investigación Avanzada</h3>
-                <p class="text-white">
-                    Participa en proyectos de investigación de vanguardia.
+                <p class="text-white text-sm">
+                    Accede a proyectos de investigación pioneros, desarrollando soluciones innovadoras para el futuro de la tecnología espacial.
                 </p>
             </div>
             <!-- Beneficio 3 -->
-            <div class="p-6 bg-gray-800 rounded-2xl shadow-lg text-center" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-network-wired text-5xl text-accent mb-4"></i>
+            <div class="flex flex-col items-center p-6 bg-gray-800 rounded-2xl shadow-lg text-center transition-all duration-300 hover:bg-gray-700 hover:scale-105">
+                <div class="bg-accent/20 text-accent p-6 rounded-full mb-6">
+                    <i class="fas fa-network-wired text-4xl"></i>
+                </div>
                 <h3 class="text-2xl font-bold text-white mb-2">Conexiones Globales</h3>
-                <p class="text-white">
-                    Accede a una red internacional de profesionales y oportunidades.
+                <p class="text-white text-sm">
+                    Forma parte de una comunidad internacional, con acceso a contactos, conferencias y oportunidades de colaboración global.
                 </p>
             </div>
         </div>
+        <!-- Agregando un Slider o Elemento Dinámico -->
+        <div class="mt-16 text-center">
+            <h3 class="text-3xl font-semibold text-white mb-8">Formación a tu Ritmo</h3>
+            <div class="relative">
+                <div class="w-full h-80 bg-cover bg-center rounded-lg" style="background-image: url('{{ asset('images/planetas-sistema-solar.webp') }}');"></div>
+                <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="text-white text-2xl font-semibold">Cursos y talleres con módulos flexibles para adaptarse a tu horario y necesidades.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
+
+<!-- SEPARADOR ORGÁNICO -->
+<div class="h-48 bg-space-700 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-60"></div>
+    <div class="absolute inset-0 animate-orbital-movement">
+        <div class="w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
+    </div>
+</div>
+
 
 <!-- TESTIMONIOS -->
 <section class="py-24 bg-gradient-to-br from-cosmic-500 via-cosmic-700 to-black overflow-hidden" data-aos="fade-up">
@@ -181,41 +213,14 @@
     </div>
 </section>
 
-<!-- EVENTOS ACADÉMICOS (TIMELINE) -->
-<section class="py-24 bg-gradient-to-br from-cosmic-300 via-space-700" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-5xl font-bold text-white mb-4">Eventos Académicos</h2>
-            <p class="text-white text-xl max-w-3xl mx-auto">
-                Mantente actualizado con nuestros próximos eventos, conferencias y talleres que impulsarán tu conocimiento.
-            </p>
-        </div>
-        <div class="relative wrap overflow-hidden p-10 h-full">
-            <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
-            @php
-                $eventos = [
-                    ['fecha' => '15 Mar, 2025', 'evento' => 'Conferencia Internacional de Astronomía'],
-                    ['fecha' => '30 Abr, 2025', 'evento' => 'Taller de Robótica Aplicada'],
-                    ['fecha' => '20 May, 2025', 'evento' => 'Seminario sobre Satélites y Comunicaciones'],
-                ];
-            @endphp
-            @foreach($eventos as $index => $evento)
-                @php $isLeft = $index % 2 == 0; @endphp
-                <div class="mb-8 flex justify-{{ $isLeft ? 'start' : 'end' }} items-center w-full" data-aos="fade-up" data-aos-delay="{{ $index * 150 }}">
-                    <div class="order-1 w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-cyan-400 shadow-xl w-8 h-8 rounded-full">
-                        <h1 class="mx-auto text-white font-semibold">{{ $evento['fecha'] }}</h1>
-                    </div>
-                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                        <p class="text-white text-base">
-                            {{ $evento['evento'] }}
-                        </p>
-                    </div>
-                </div>
-            @endforeach
-        </div>
+<!-- SEPARADOR ORGÁNICO -->
+<div class="h-48 bg-space-700 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-60"></div>
+    <div class="absolute inset-0 animate-orbital-movement">
+        <div class="w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
     </div>
-</section>
+</div>
+
 
 <!-- PREGUNTAS FRECUENTES (FAQ) -->
 <section class="py-24 bg-cosmic" data-aos="fade-up">
@@ -226,24 +231,39 @@
                 Resolvemos tus dudas sobre nuestros programas y el proceso de inscripción.
             </p>
         </div>
-        <div class="space-y-4">
+        <div class="space-y-6">
             <!-- FAQ 1 -->
-            <details class="bg-gray-800 rounded-xl p-4 shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <summary class="text-white font-bold cursor-pointer">¿Qué requisitos necesito para inscribirme?</summary>
+            <details class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                <summary class="text-white font-bold cursor-pointer text-xl flex justify-between items-center">
+                    <span>¿Qué requisitos necesito para inscribirme?</span>
+                    <svg class="w-6 h-6 text-white transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
                 <p class="text-white mt-2">
                     Para inscribirte, debes contar con el título de bachiller y cumplir con los requisitos específicos de cada programa.
                 </p>
             </details>
             <!-- FAQ 2 -->
-            <details class="bg-gray-800 rounded-xl p-4 shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                <summary class="text-white font-bold cursor-pointer">¿Existen becas o financiamiento?</summary>
+            <details class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                <summary class="text-white font-bold cursor-pointer text-xl flex justify-between items-center">
+                    <span>¿Existen becas o financiamiento?</span>
+                    <svg class="w-6 h-6 text-white transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
                 <p class="text-white mt-2">
                     Sí, ofrecemos diversas opciones de becas y financiamiento para apoyar a nuestros estudiantes.
                 </p>
             </details>
             <!-- FAQ 3 -->
-            <details class="bg-gray-800 rounded-xl p-4 shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                <summary class="text-white font-bold cursor-pointer">¿Cuál es la modalidad de los programas?</summary>
+            <details class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                <summary class="text-white font-bold cursor-pointer text-xl flex justify-between items-center">
+                    <span>¿Cuál es la modalidad de los programas?</span>
+                    <svg class="w-6 h-6 text-white transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
                 <p class="text-white mt-2">
                     Nuestros programas se ofrecen en modalidad presencial, semipresencial y en línea, según las necesidades del curso.
                 </p>
@@ -255,15 +275,21 @@
 <!-- LLAMADO A LA ACCIÓN (CTA) -->
 <section class="py-24 bg-gradient-to-r from-secondary to-primary" data-aos="zoom-in">
     <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="text-5xl font-bold mb-4 text-glow">¿Listo para transformar tu futuro?</h2>
-        <p class="text-xl text-primary mb-8">
-            Inscríbete ahora y forma parte de la vanguardia en la exploración espacial.
+        <h2 class="text-5xl font-bold text-white mb-4 text-glow animate__animated animate__fadeInUp">¿Listo para transformar tu futuro?</h2>
+        <p class="text-xl text-white mb-8 max-w-3xl mx-auto">
+            Inscríbete ahora y forma parte de la vanguardia en la exploración espacial. Da el siguiente paso hacia una educación de excelencia.
         </p>
-        <a href="#" class="inline-block bg-cosmic text-primary font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition transform">
-            Inscríbete
-        </a>
+        <div class="flex justify-center">
+            <a href="#" class="inline-block bg-cosmic text-white font-bold py-3 px-8 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 transform">
+                Inscríbete
+            </a>
+        </div>
+        <div class="mt-8">
+            <p class="text-white text-lg italic">¡No dejes pasar esta oportunidad única!</p>
+        </div>
     </div>
 </section>
+
 
 <!-- ESTILOS PERSONALIZADOS -->
 <style>

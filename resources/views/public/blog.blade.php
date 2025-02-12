@@ -23,7 +23,7 @@
         <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
             <!-- Artículo 1 -->
             <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="/images/blog1.jpg" alt="Artículo 1" class="w-full h-48 object-cover">
+                <img src="{{ asset('images/exoplanetas.jpg') }}" alt="Artículo 1" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">Descubriendo Nuevos Horizontes en la Astronomía</h2>
                     <p class="text-gray-300 mb-4">
@@ -34,7 +34,7 @@
             </article>
             <!-- Artículo 2 -->
             <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="/images/blog2.jpg" alt="Artículo 2" class="w-full h-48 object-cover">
+                <img src="{{ asset('images/exoplanetas.jpg') }}" alt="Artículo 2" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">Innovación en Robótica Espacial</h2>
                     <p class="text-gray-300 mb-4">
@@ -45,7 +45,7 @@
             </article>
             <!-- Artículo 3 -->
             <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="/images/blog3.jpg" alt="Artículo 3" class="w-full h-48 object-cover">
+                <img src="{{ asset('images/exoplanetas.jpg') }}" alt="Artículo 3" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">El Futuro de la Comunicación Satelital</h2>
                     <p class="text-gray-300 mb-4">
@@ -56,7 +56,7 @@
             </article>
             <!-- Artículo 4 -->
             <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="/images/blog4.jpg" alt="Artículo 4" class="w-full h-48 object-cover">
+                <img src="{{ asset('images/exoplanetas.jpg') }}" alt="Artículo 4" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">Avances en Exploración Planetaria</h2>
                     <p class="text-gray-300 mb-4">
@@ -67,7 +67,7 @@
             </article>
             <!-- Artículo 5 -->
             <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="/images/blog5.jpg" alt="Artículo 5" class="w-full h-48 object-cover">
+                <img src="{{ asset('images/exoplanetas.jpg') }}" alt="Artículo 5" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">Innovación y Sostenibilidad en el Espacio</h2>
                     <p class="text-gray-300 mb-4">
@@ -78,7 +78,7 @@
             </article>
             <!-- Artículo 6 -->
             <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-                <img src="/images/blog6.jpg" alt="Artículo 6" class="w-full h-48 object-cover">
+                <img src="{{ asset('images/exoplanetas.jpg') }}" alt="Artículo 6" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-white mb-2">El Rol de la Inteligencia Artificial en el Espacio</h2>
                     <p class="text-gray-300 mb-4">
