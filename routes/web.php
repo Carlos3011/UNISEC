@@ -3,11 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 
-
-Route::get('/', [PublicController::class, 'inicio'])->name('inicio');
-Route::get('/acerca-de', [PublicController::class, 'acerca'])->name('acerca');
-Route::get('/ofertas', [PublicController::class, 'ofertas'])->name('ofertas');
-Route::get('/miembros', [PublicController::class, 'miembros'])->name('miembros');
-Route::get('/blog', [PublicController::class, 'blog'])->name('blog');
-Route::get('/contacto', [PublicController::class, 'contacto'])->name('contacto');
-
+Route::controller(PublicController::class)->group(function () {
+    Route::get('/', 'inicio')->name('inicio');
+    Route::get('/acerca', 'acerca')->name('acerca');
+    Route::get('/ofertas', 'ofertas')->name('ofertas');
+    Route::get('/miembros', 'miembros')->name('miembros');
+    Route::get('/blog', 'blog')->name('blog');
+    Route::get('/contacto', 'contacto')->name('contacto');
+});
