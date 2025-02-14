@@ -3,24 +3,66 @@
 @section('titulo', 'Ofertas Académicas')
 
 @section('contenido')
-<!-- HERO -->
-<section class="relative min-h-[80vh] flex flex-col justify-center bg-gradient-to-br from-space-900 via-cosmic-800 to-space-900 overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1200">
+<!-- HERO Mejorado -->
+<section class="relative min-h-[85vh] flex flex-col justify-center items-center bg-gradient-to-br from-space-900 via-cosmic-800 to-space-900 overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1200">
 
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-20 space-y-8">
-        <!-- Título con efecto galáctico -->
-        <div class="relative inline-block" data-aos="fade-up">
-            <h1 class="text-6xl md:text-8xl font-bold mb-4 galactic-title">
-                <span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-primary animate-gradient">OFERTAS ACADEMICAS</span>
-            </h1>
-            <div class="absolute inset-0 bg-[url('/svg/starburst.svg')] bg-contain bg-center opacity-30 mix-blend-overlay animate-rotate-slow"></div>
-        </div>
+    <!-- Capa de estrellas animadas -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute inset-0 bg-[url('/svg/starburst.svg')] bg-contain bg-center opacity-30 mix-blend-overlay animate-rotate-slow"></div>
+        <div class="absolute inset-0 bg-[url('/svg/stars.svg')] bg-repeat opacity-20 animate-twinkle"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 sm:px-8 text-center z-20 space-y-8">
+        <!-- Título con efecto futurista -->
+        <h1 class="text-4xl sm:text-6xl md:text-8xl font-extrabold galactic-title tracking-wide uppercase leading-tight" data-aos="fade-up">
+            <span class="text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-primary animate-gradient">
+                Ofertas Académicas
+            </span>
+        </h1>
+
         <!-- Subtítulo -->
-        <p class="text-xl md:text-2xl text-white max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-            Descubre los programas educativos que impulsarán tu carrera en el ámbito espacial.
+        <p class="text-lg sm:text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="200">
+            Explora programas educativos de vanguardia diseñados para llevarte más allá de los límites del conocimiento espacial.
         </p>
+
+        <!-- Botón de acción -->
+        <div data-aos="fade-up" data-aos-delay="400">
+            <a href="#cursos" class="inline-block px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-cyan-500 to-primary rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                Explorar Programas
+            </a>
+        </div>
     </div>
 
 </section>
+
+<style>
+@keyframes twinkle {
+    0% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.05); }
+    100% { opacity: 0.3; transform: scale(1); }
+}
+.animate-twinkle {
+    animation: twinkle 6s infinite ease-in-out alternate;
+}
+
+@media (max-width: 768px) {
+    .text-4xl {
+        font-size: 3rem;
+    }
+    .text-xl {
+        font-size: 1.125rem;
+    }
+    .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+</style>
+
 
 <!-- SEPARADOR ORGÁNICO -->
 <div class="h-48 bg-space-700 relative overflow-hidden">

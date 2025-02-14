@@ -376,45 +376,39 @@
   </div>
 </section>
 
-
-<!-- NUESTRA HISTORIA (TIMELINE) -->
+<!-- NUESTRA HISTORIA - MINIMALISTA Y CENTRADA -->
 <section class="py-24 bg-gray-900">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <!-- TÍTULO -->
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-white mb-4">Nuestra Historia</h2>
-            <p class="text-gray-400 text-xl max-w-3xl mx-auto">
-                Un recorrido lleno de hitos que definen nuestro compromiso con la exploración y la innovación.
+            <h2 class="text-5xl font-semibold text-white mb-4 tracking-tight">Nuestra Historia</h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Un recorrido de innovación y exploración que define nuestro impacto en el futuro de la tecnología espacial.
             </p>
         </div>
-        <!-- Timeline -->
-        <div class="relative wrap overflow-hidden p-10">
-            <!-- Línea Central -->
-            <div class="absolute border-l-2 border-gray-600 h-full left-1/2 transform -translate-x-1/2"></div>
 
+        <!-- TIMELINE CENTRADO -->
+        <div class="relative flex flex-col items-center">
             @php
                 $timeline = [
                     ['year' => '2020', 'event' => 'Fundación de UNISEC y lanzamiento del primer proyecto de investigación aeroespacial.'],
                     ['year' => '2021', 'event' => 'Desarrollo de colaboraciones internacionales y registro de patentes innovadoras.'],
                     ['year' => '2023', 'event' => 'Reconocimiento como líder en tecnología espacial en Latinoamérica.'],
-                    ['year' => '2025', 'event' => 'Liderazgo en el desarrollo de misiones interplanetarias y participación en la construcción de satélites de próxima generación.'],
+                    ['year' => '2025', 'event' => 'Liderazgo en el desarrollo de misiones interplanetarias y construcción de satélites de próxima generación.'],
                 ];
             @endphp
 
-            @foreach($timeline as $index => $item)
-                @php $isLeft = $index % 1 == 0; @endphp
-                <div class="mb-12 flex items-center w-full" data-aos="fade-up" data-aos-delay="{{ $index * 150 }}">
-                    <!-- Año en columna a la izquierda o derecha -->
-                    <div class="w-1/4 flex justify-center px-4">
-                        <div class="w-16 h-16 bg-cyan-500 text-white font-bold rounded-full flex items-center justify-center shadow-lg">
-                            <span class="text-2xl">{{ $item['year'] }}</span>
-                        </div>
-                    </div>
+            <div class="absolute w-1 h-full bg-gray-700 dark:bg-gray-600"></div>
 
-                    <!-- Evento -->
-                    <div class="w-3/4 flex justify-{{ $isLeft ? 'start' : 'end' }} px-6">
-                        <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300 ease-in-out w-full max-w-xl">
-                            <p class="text-gray-300 text-base">{{ $item['event'] }}</p>
-                        </div>
+            @foreach($timeline as $index => $item)
+                <div class="mb-12 relative w-full max-w-2xl text-center" data-aos="fade-up" data-aos-delay="{{ $index * 150 }}">
+                    <!-- PUNTO DE LA LÍNEA -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-gray-900"></div>
+
+                    <!-- TARJETA DE EVENTO -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 ease-in-out mx-auto w-full">
+                        <span class="block text-cyan-400 text-lg font-semibold">{{ $item['year'] }}</span>
+                        <p class="text-gray-300 text-base mt-2 leading-relaxed">{{ $item['event'] }}</p>
                     </div>
                 </div>
             @endforeach
@@ -424,8 +418,9 @@
 
 
 
-<!-- NUESTR0S VALORES -->
-<section id="valores" class="py-24 bg-space-700" data-aos="fade-up">
+
+<!-- NUESTROS VALORES - MEJORADO Y CENTRADO -->
+<section id="valores" class="py-24 bg-gray-900" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
             <h2 class="text-5xl font-bold text-white mb-4">Nuestros Valores</h2>
@@ -433,29 +428,33 @@
                 Estos son los principios que guían cada uno de nuestros proyectos y decisiones.
             </p>
         </div>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+
+        <!-- GRID DE VALORES -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             @php
                 $valores = [
-                    ['nombre' => 'Innovación', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 19h6l-.75-2M9 11l.75-2h4.5L15 11M7.75 11h8.5l-1.5-4H9.25l-1.5 4z" /></svg>'],
-                    ['nombre' => 'Compromiso', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>'],
-                    ['nombre' => 'Colaboración', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-5-3.5" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20H4v-2a4 4 0 015-3.5" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>'],
-                    ['nombre' => 'Exploración', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 00-10 10 10 10 0 0010 10 10 10 0 0010-10A10 10 0 0012 2z" /></svg>'],
-                    ['nombre' => 'Excelencia', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>'],
+                    ['nombre' => 'Innovación', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 19h6l-.75-2M9 11l.75-2h4.5L15 11M7.75 11h8.5l-1.5-4H9.25l-1.5 4z" /></svg>'],
+                    ['nombre' => 'Compromiso', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>'],
+                    ['nombre' => 'Colaboración', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-5-3.5" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20H4v-2a4 4 0 015-3.5" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>'],
+                    ['nombre' => 'Exploración', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 00-10 10 10 10 0010 10 10 10 0010-10A10 10 0 0012 2z" /></svg>'],
+                    ['nombre' => 'Excelencia', 'icon' => '<svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>'],
                 ];
             @endphp
+
             @foreach($valores as $valor)
-            <div class="p-6 bg-gray-800 rounded-xl shadow-2xl transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-cyan-600 hover:to-purple-600 hover:shadow-3xl flex flex-col items-center text-center">
+            <div class="p-8 bg-gray-800 rounded-2xl shadow-lg transition-transform transform hover:scale-105 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:shadow-2xl flex flex-col items-center text-center">
                 <div class="mb-6">
                     {!! $valor['icon'] !!}
                 </div>
                 <h4 class="text-2xl font-semibold text-white mb-2">{{ $valor['nombre'] }}</h4>
                 <p class="text-gray-300 text-sm">
-                    Principios que reflejan nuestro compromiso con la excelencia en cada proyecto.
+                    Reflejamos nuestro compromiso con la excelencia en cada proyecto.
                 </p>
             </div>
             @endforeach
         </div>
     </div>
 </section>
+
 
 @endsection

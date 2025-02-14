@@ -4,42 +4,40 @@
 
 @section('contenido')
 
-<!-- Seccion Hero -->
-<section class="relative min-h-screen flex items-center bg-gradient-to-br from-cosmic-300 via-space-700 ">
-    <div class="relative max-w-7xl mx-auto px-6 text-center z-10" data-aos="zoom-in-up" data-aos-duration="1000">
+<!-- Sección Hero Mejorada -->
+<section class="relative min-h-screen flex items-center  via-space-700 to-black py-12 px-6">
+    <div class="relative max-w-7xl mx-auto text-center z-10" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="mb-12">
-            <h1 class="text-6xl md:text-7xl bg-gradient-to-r from-secondary to-primary-100 bg-clip-text text-transparent font-bold mb-6 relative">
-                <span id="typed-text-hover-title" class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-600"></span>  
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold bg-gradient-to-r from-secondary to-primary-100 bg-clip-text text-transparent mb-6">
+                <span id="typed-text-hover-title" class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-600"></span>
             </h1>
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
-                Revolucionando la  
-                <span id="typed-text-hover" class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-700"></span>  
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Revolucionando la 
+                <span id="typed-text-hover" class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-700"></span>
                 Mediante la Innovación
             </h1>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
-                Consorcio internacional líder en ingeniería aeroespacial avanzada y desarrollo de tecnologías espaciales sostenibles
+            <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Consorcio internacional líder en ingeniería aeroespacial avanzada y desarrollo de tecnologías espaciales sostenibles.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="#inscripcion" class="relative px-8 py-4 rounded-xl font-bold text-white-700 bg-secondary hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-secondary/30 hover:shadow-secondary/50 flex items-center gap-2">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+                <a href="#inscripcion" class="relative px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-white bg-secondary hover:bg-cyan-400 transition-all duration-300 shadow-lg flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
                         <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
                     </svg>
                     Ver programas académicos
-                    <span class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-xl"></span>
                 </a>
-                <a href="#innovaciones" class="relative border-2 border-primary px-8 py-4 rounded-xl font-bold text-white hover:bg-primary/10 transition-all duration-300 flex items-center gap-2">
+                <a href="#innovaciones" class="relative border-2 border-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-white hover:bg-primary/10 transition-all duration-300 flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
                     </svg>
                     Video institucional
-                    <span class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-xl"></span>
                 </a>
             </div>
         </div>
         
         <!-- Contador de logros con animación -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-16 sm:mt-24">
             @foreach([
                 ["count" => 127, "label" => "Misiones exitosas"],
                 ["count" => 89, "label" => "Patentes registradas"],
@@ -47,13 +45,14 @@
                 ["count" => 15, "label" => "Premios internacionales"]
             ] as $stat)
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-accent mb-2 counter" data-count="{{ $stat['count'] }}">0</div>
-                    <div class="text-sm text-primary font-bold uppercase tracking-wide">{{ $stat["label"] }}</div>
+                    <div class="text-3xl sm:text-4xl font-bold text-accent mb-1 sm:mb-2 counter" data-count="{{ $stat['count'] }}">0</div>
+                    <div class="text-xs sm:text-sm text-primary font-bold uppercase tracking-wide">{{ $stat["label"] }}</div>
                 </div>
             @endforeach
         </div>
     </div>
 </section>
+
 
 <!-- SEPARADOR ORGÁNICO -->
 <div class="h-48 bg-space-700 relative overflow-hidden">
@@ -63,28 +62,28 @@
     </div>
 </div>
 
-<!-- Galería de Videos Mejorada -->
-<section class="py-16 bg-gradient-to-br  relative overflow-hidden" data-aos="fade-up">
+<!-- Galería de Videos Mejorada y Responsiva -->
+<section class="py-16 bg-gradient-to-br relative overflow-hidden" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <!-- Encabezado con animación -->
         <div class="text-center mb-12">
             <div class="inline-flex relative">
                 <span class="absolute -inset-4 bg-galactic-500/50 blur-3xl rounded-full"></span>
-                <h2 id="typed-text-gallery-title"class="text-6xl md:text-7xl bg-gradient-to-r from-cyan-500 to-secondary bg-clip-text text-transparent font-bold mb-6 relative">
-                    Galeria de Videos
+                <h2 id="typed-text-gallery-title" class="text-4xl sm:text-5xl md:text-6xl bg-gradient-to-r from-cyan-500 to-secondary bg-clip-text text-transparent font-bold mb-6 relative">
+                    Galería de Videos
                 </h2>
             </div>
-            <p class="text-lg text-tech-300 max-w-2xl mx-auto">
+            <p class="text-base sm:text-lg text-tech-300 max-w-2xl mx-auto">
                 Descubre nuestros contenidos destacados y sumérgete en el universo.
             </p>
         </div>
 
         <!-- Video Principal -->
-        <div class="mb-8 relative group" id="main-video-container">
-            <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.02] aero-glow">
+        <div class="mb-8 relative group">
+            <div class="aspect-video bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-[1.02]">
                 <iframe 
                     id="main-video-player"
-                    class="w-full h-full absolute inset-0"
+                    class="w-full h-full"
                     src="https://www.youtube.com/embed/hI9HQfCAw64?modestbranding=1&rel=0" 
                     frameborder="0"
                     allowfullscreen
@@ -94,15 +93,15 @@
         </div>
 
         <!-- Carrusel de Videos -->
-        <div class="flex overflow-x-auto pb-6 -mx-2 scrollbar-hide space-x-4" id="video-carousel">
+        <div class="flex overflow-x-auto pb-6 space-x-4 scrollbar-hide" id="video-carousel">
             @foreach([
-                ['id' => 'hI9HQfCAw64', 'title' => 'Lanzamiento histórico', 'active' => true],
+                ['id' => 'hI9HQfCAw64', 'title' => 'Lanzamiento histórico'],
                 ['id' => '1C_zuHf6lP4', 'title' => 'Primeras imágenes James Webb'],
                 ['id' => '5KygwcZ545U', 'title' => 'Entrenamiento de astronautas'],
                 ['id' => 'BN624m0QJIM', 'title' => 'Falcon Heavy lanzamiento'],
             ] as $video)
             <div 
-                class="flex-shrink-0 w-64 cursor-pointer video-carousel-item transition-all duration-300 border border-tech-500 rounded-xl overflow-hidden bg-tech-700 hover:scale-105"
+                class="flex-shrink-0 w-52 sm:w-64 cursor-pointer video-carousel-item transition-all duration-300 border border-tech-500 rounded-lg overflow-hidden bg-tech-700 hover:scale-105"
                 data-video-id="{{ $video['id'] }}"
             >
                 <div class="aspect-video bg-gray-800 relative">
@@ -117,8 +116,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="p-4 bg-cosmic-500">
-                    <h3 class="text-md font-semibold text-primary line-clamp-2">
+                <div class="p-3 bg-cosmic-500">
+                    <h3 class="text-sm sm:text-md font-semibold text-primary line-clamp-2">
                         {{ $video['title'] }}
                     </h3>
                 </div>
@@ -136,26 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const carouselItems = document.querySelectorAll('.video-carousel-item');
     const mainVideo = document.getElementById('main-video-player');
 
-    let activeVideoId = "hI9HQfCAw64";
-
     carouselItems.forEach(item => {
         item.addEventListener('click', function() {
             const videoId = this.dataset.videoId;
-
-            if (videoId !== activeVideoId) {
-                mainVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0`;
-                activeVideoId = videoId;
-
-                carouselItems.forEach(i => i.classList.remove('border-accent-500', 'border-2'));
-                this.classList.add('border-accent-500', 'border-2');
-            }
+            mainVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0`;
         });
     });
-
-    const firstVideo = document.querySelector('.video-carousel-item[data-video-id="hI9HQfCAw64"]');
-    if (firstVideo) {
-        firstVideo.classList.add('border-accent-500', 'border-2');
-    }
 });
 </script>
 
@@ -170,14 +155,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     .video-carousel-item:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+        transform: translateY(-3px);
+        box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
     }
 
     #video-carousel {
         scroll-behavior: smooth;
     }
 </style>
+
 
 
 <!-- SEPARADOR ORGÁNICO -->
@@ -188,13 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </div>
 
-<!-- Galeria de imagenes -->
+<!-- Galería de Imágenes -->
 <section class="py-24 bg-space-700" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
             <div class="inline-flex relative">
                 <span class="absolute -inset-4 bg-galactic-500/30 blur-3xl rounded-full"></span>
-                <h2 id="typed-text-gallery-title"class="text-6xl md:text-7xl bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-bold mb-6 relative">
+                <h2 id="typed-text-gallery-title" class="text-5xl sm:text-6xl md:text-7xl bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent font-bold mb-6 relative">
                     Exploración Visual
                 </h2>
             </div>
@@ -203,58 +189,54 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
         </div>
 
-        @php
-            $imagenes = [
-                ["nombre" => "Lanzamiento Histórico", "archivo" => "spacex-rocket.jpg", "descripcion" => "El despegue que cambió la historia."],
-                ["nombre" => "Telescopio James Webb", "archivo" => "nebulosa-morada.jpg", "descripcion" => "Explorando el universo con nuevas imágenes."],
-                ["nombre" => "Satélite en órbita", "archivo" => "satelite.jpg", "descripcion" => "Tecnología avanzada en el espacio."],
-                ["nombre" => "La Tierra desde el espacio", "archivo" => "earth.jpg", "descripcion" => "Vista única de nuestro planeta."],
-                ["nombre" => "Anillos de Saturno", "archivo" => "saturno.jpg", "descripcion" => "Impresionante visión del cosmos."],
-                ["nombre" => "El sol", "archivo" => "sol.jpg", "descripcion" => "Una maravilla del universo profundo."],
-            ];
-        @endphp
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            @php
+                $imagenes = [
+                    ["nombre" => "Lanzamiento Histórico", "archivo" => "spacex-rocket.jpg", "descripcion" => "El despegue que cambió la historia."],
+                    ["nombre" => "Telescopio James Webb", "archivo" => "nebulosa-morada.jpg", "descripcion" => "Explorando el universo con nuevas imágenes."],
+                    ["nombre" => "Satélite en órbita", "archivo" => "satelite.jpg", "descripcion" => "Tecnología avanzada en el espacio."],
+                    ["nombre" => "La Tierra desde el espacio", "archivo" => "earth.jpg", "descripcion" => "Vista única de nuestro planeta."],
+                    ["nombre" => "Anillos de Saturno", "archivo" => "saturno.jpg", "descripcion" => "Impresionante visión del cosmos."],
+                    ["nombre" => "El sol", "archivo" => "sol.jpg", "descripcion" => "Una maravilla del universo profundo."],
+                ];
+            @endphp
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
             @foreach($imagenes as $index => $img)
                 @php
                     $rutaImagen = asset('images/space/' . $img["archivo"]);
-                    
-                    // Alternamos tamaños: algunas grandes (2x2), otras medianas (1x2), y el resto pequeñas (1x1)
+
+                    // Definir clases responsivas para tamaños adaptables
                     $spanClass = match ($index % 6) {
-                        0 => 'row-span-2 col-span-2',  // Imágenes más grandes
-                        2, 4 => 'row-span-1 col-span-2',  // Medianas horizontales
-                        default => 'row-span-1 col-span-1',  // Pequeñas
+                        0 => 'lg:col-span-2 lg:row-span-2',  // Imágenes grandes solo en pantallas grandes
+                        2, 4 => 'md:col-span-2',  // Imágenes medianas horizontales en pantallas medianas
+                        default => 'col-span-1',  // Tamaño normal en móviles
                     };
                 @endphp
 
                 <div 
-                    class="group relative overflow-hidden rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] 
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out 
                     {{ $spanClass }} hover:z-10"
                     data-aos="zoom-in-up"
                     data-aos-delay="{{ $loop->index * 150 }}"
                     data-aos-anchor-placement="top-center"
                 >
-                    <!-- Contenedor con efecto Parallax y Hover trasero -->
-                    <div class="relative h-full w-full perspective-1000 transform preserve-3d transition-all duration-500">
+                    <div class="relative h-full w-full">
                         
-                        <!-- Hover trasero con iluminación -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                        
-                        <!-- Imagen -->
+                        <!-- Imagen con efecto de zoom -->
                         <img 
                             src="{{ $rutaImagen }}" 
                             alt="{{ $img['nombre'] }}"
-                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 origin-center rounded-xl"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 rounded-xl"
                         >
                         
-                        <!-- Overlay con Información -->
+                        <!-- Overlay con información -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4 space-y-2 translate-y-6 group-hover:translate-y-0 transition-all duration-500 delay-100">
-                                <h3 class="text-xl font-bold text-white drop-shadow-lg">
+                                <h3 class="text-lg md:text-xl font-bold text-white">
                                     {{ $img['nombre'] }}
                                 </h3>
-                                <div class="bg-space-800/80 backdrop-blur-sm p-3 rounded-lg">
-                                    <p class="text-white text-sm line-clamp-2">
+                                <div class="bg-space-800/80 backdrop-blur-md p-3 rounded-lg">
+                                    <p class="text-white text-sm md:text-base">
                                         {{ $img["descripcion"] }}
                                     </p>
                                 </div>
@@ -267,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </section>
+
 
 <!-- SEPARADOR ORGÁNICO -->
 <div class="h-48 bg-space-700 relative overflow-hidden">
@@ -286,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="text-center mb-16">
             <div class="inline-flex relative">
                 <span class="absolute -inset-4 bg-galactic-500/40 blur-3xl rounded-full"></span>
-                <h2 id="typed-text-gallery-title" class="text-6xl md:text-7xl bg-gradient-to-r from-accent-300 to-primary bg-clip-text text-transparent font-extrabold mb-6 relative text-glow">
+                <h2 id="typed-text-gallery-title" class="text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-accent-300 to-primary bg-clip-text text-transparent font-extrabold mb-6 relative text-glow">
                     Últimas Noticias
                 </h2>
             </div>
@@ -295,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
             @php 
                 // Simulando datos dinámicos (puedes reemplazarlo con datos de base de datos)
                 $noticias = [
@@ -341,40 +324,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         'fecha' => '5 Junio 2024',
                         'categoria' => '🚀 Ingeniería Espacial'
                     ],
-                    [
-                        'img' => 'noticias/spacex-despegue.jpg',  // Ruta local
-                        'titulo' => 'Investigación avanzada en motores de cohetes nucleares',
-                        'descripcion' => 'Avances en la investigación de nuevos tipos de propulsión para explorar más allá de nuestro sistema solar...',
-                        'fecha' => '5 Junio 2024',
-                        'categoria' => '🚀 Ingeniería Espacial'
-                    ],
                 ];
             @endphp
 
-            @foreach($noticias as $key => $noticia)
-                @php
-                    // Determinamos el tamaño de las tarjetas según el índice
-                    $sizeClass = match($key) {
-                        0 => 'col-span-2 row-span-2',  
-                        1 => 'col-span-2 row-span-2',  
-                        2 => 'col-span-3 row-span-1',  
-                        3 => 'col-span-1 row-span-1',  
-                        4 => 'col-span-1 row-span-1',  
-                        5 => 'col-span-2 row-span-1',
-                        6 => 'col-span-1 row-span-1', 
-                        default => 'col-span-2 row-span-2',  
-                    };
-                @endphp
-
-                <article class="group relative bg-tech-700/30 rounded-2xl border border-tech-500 hover:border-secondary transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-accent-500/40 overflow-hidden {{ $sizeClass }}"
-                         data-aos="fade-left" data-aos-delay="{{ ($key + 1) * 150 }}">
-
-                    <div class="relative overflow-hidden">
-                        <!-- Usar la función asset para cargar las imágenes locales -->
+            @foreach($noticias as $noticia)
+                <article class="group relative bg-tech-700/30 rounded-2xl border border-tech-500 hover:border-secondary transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-accent-500/40 overflow-hidden"
+                         data-aos="fade-up" data-aos-delay="{{ ($loop->index + 1) * 100 }}">
+                    <div class="relative overflow-hidden h-52 sm:h-64 md:h-72 lg:h-80">
                         <img src="{{ asset('images/' . $noticia['img']) }}" 
-                             alt="Noticia {{ $key + 1 }}"
+                             alt="{{ $noticia['titulo'] }}"
                              class="w-full h-full object-cover rounded-t-2xl group-hover:scale-105 transition-transform duration-700 ease-in-out">
-                        
                         <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
 
@@ -383,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="mr-4">📅 {{ $noticia['fecha'] }}</span>
                             <span>{{ $noticia['categoria'] }}</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-3 leading-tight transition-colors group-hover:text-accent-100">
+                        <h3 class="text-xl lg:text-2xl font-bold text-white mb-3 leading-tight transition-colors group-hover:text-accent-100">
                             {{ $noticia['titulo'] }}
                         </h3>
                         <p class="text-tech-100 line-clamp-3">
